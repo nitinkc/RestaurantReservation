@@ -38,7 +38,6 @@
 <body id="page-top" class="index" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <!------------------ Navigation  ---------------------->
-
 <!-- navbar-fixed-top hides anything in top, don't use if something needs above nav bar!! --->
 <nav class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="navigation">
     <div class="container-fluid">
@@ -57,9 +56,10 @@
         <div class="collapse navbar-collapse" id="mobile-navbar-collapse">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="page-scroll" href="#about">About</a></li>
-                <li><a class="page-scroll" href="#address">Address</a></li>
+                <li><a class="page-scroll" href="#introduction">Introduction</a></li>
+                <li><a class="page-scroll" href="#modify">Modify/Cancel</a></li>
                 <li><a class="page-scroll" href="#feedback">Feedback</a></li>
+                <li><a class="page-scroll" href="#address">Address</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a data-toggle="modal" data-target="#managerModal">
                     <span class="glyphicon glyphicon-log-in">
@@ -88,7 +88,7 @@
     </div>
 </header>
 
-<!------------------ Form (in the Panel) that guest fills to Book Reservations ---------------------->
+<!------------------ Form (in the Panel) that guest fills to Book Reservations ------------->
 <div class="section" id="guest-form">
     <div class="container">
         <h2 class="text-primary" style="padding-left: 20%">Please fill out the form to Book a reservation</h2>
@@ -189,7 +189,7 @@
                 </form>
             </div>
         </div>
-        <div class="modal-footer" >
+        <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
@@ -197,50 +197,12 @@
 </div>
 </div>
 
-<!------------------ TOP PAGE ---------------------->
-<!--<div class="container">
-    <div class="row">
-        <div class="col-md-3 text-center">
-            <h1 class="text-inverse">Heading</h1>
-
-            <p class="text-inverse">Lorem ipsum dolor sit amet, consectetur adipisici eli.</p>
-            <br>
-            <br>
-            <a class="btn btn-lg btn-primary">Click me</a>
-        </div>
-        <div class="col-md-9">                         <input type="text" class="form-control" placeholder="Email" required autofocus>
-                                    <input type="password" class="form-control" placeholder="Password" required>
-                                    <button class="btn btn-lg btn-primary btn-block" type="submit">
-                                        Sign in</button>
-                                    <label class="checkbox pull-left">
-                                        <input type="checkbox" value="remember-me">
-                                        Remember me
-                                    </label>
-                                    <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
-                                </form>
-            <form role="form">
-                <div class="form-group">
-                    <label class="control-label" for="exampleInputEmail1">Email address</label>
-                    <input class="form-control" id="exampleInputEmail1"
-                           placeholder="Enter email" type="email">
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="exampleInputPassword1">Password</label>
-                    <input class="form-control" id="exampleInputPassword1"
-                           placeholder="Password" type="password">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-        </div>
-    </div>
-</div>-->
-
 <!-------------  Square Image with Brainy Quote Daily ------------->
-<div class="content-section" id="about">
+<div class="content-section text-center" id="introduction">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="text-primary">Introduction</h1>
+                <h1 class="text-primary">Welcome :) </h1>
 
                 <h3>Quote Of the Day</h3>
                 <!--Brainy Quote insertion-->
@@ -258,69 +220,36 @@
     </div>
 </div>
 
-<!-------------  Round Image with Text ------------->
-<div class="section">
-    <div class="container">
-        <div class="row">
+<!-------------  Modify/Cancel Registration ------------->
+<div class="content-section" id="modify">
+    <div class="container ">
+        <div class="row clearfix">
             <div class="col-md-12">
-                <h1 class="text-center text-primary">Welcome</h1>
+                <h1 class="text-center text-primary">Modify/Cancel Registration</h1>
 
-                <p class="text-center">We serve with Love.</p>
+                <p class="text-center">Please use your confirmation id (Given at the time of Registration) </p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <img src="img/restaurant.jpg"
-                     class="center-block img-circle img-responsive">
+            <div class="row clearfix">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="confirmationId">Confirmation # Numner</label>
+                        <input type="number" class="form-control" id="confirmationId"
+                               placeholder="Enter 7 digit conformation #">
+                    </div>
+                </div>
 
-                <h3 class="text-center">Nitin</h3>
-
-                <p class="text-center">Restaurant Reservation System</p>
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <button type="submit" class="btn large-btn btn-primary">Modify/Cancel</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!--------------------- Address and Map with Map ------------------->
-<section class="content-section" id="address">
-    <div class="container">
-        <div class="row">
-            <div id="map-outer" class="col-md-12">
-                <div id="address" class="col-md-4">
-                    <h2>Our Location</h2>
-                    <address>
-                        <strong>Nitin Chaurasia</strong><br>
-                        3180 W, 14th Ave<br>
-                        Apt#322<br>
-                        Denver, CO<br>
-                        80402, USA<br>
-                        <abbr>P:</abbr> +1 (409) 225 6671
-                    </address>
-                </div>
-
-                <!--Google Map to be included Later-->
-                <div id="map-container" class="col-md-8"></div>
-                <h2>Map to be included</h2>
-
-                <p>Map to be included after Jquery...</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-                    dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                    nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
-                    enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-                    felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
-                    elementum semper nisi.</p>
-            </div>
-            <!-- /map-outer -->
-        </div>
-        <!-- /row -->
-    </div>
-</section>
-
 <!-------------------------- Contact/Feedback Section ------------------------>
-<section id="feedback">
+<div class="content-section" id="feedback">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -369,7 +298,46 @@
             </div>
         </div>
     </div>
+</div>
+
+<!--------------------- Address and Map with Map ------------------->
+<section class="content-section" id="address">
+    <div class="container">
+        <div class="row">
+            <div id="map-outer" class="col-md-12">
+                <div id="address" class="col-md-4">
+                    <h2>Our Location</h2>
+                    <address>
+                        <strong>Nitin Chaurasia</strong><br>
+                        3180 W, 14th Ave<br>
+                        Apt#322<br>
+                        Denver, CO<br>
+                        80402, USA<br>
+                        <abbr>P:</abbr> +1 (409) 225 6671
+                    </address>
+                </div>
+
+                <!--Google Map to be included Later-->
+                <div id="map-container" class="col-md-8"></div>
+                <h2>Map to be included</h2>
+
+                <p>Map to be included after Jquery...</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                    dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+                    nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                    enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                    felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
+                    elementum semper nisi.</p>
+            </div>
+            <!-- /map-outer -->
+        </div>
+        <!-- /row -->
+    </div>
 </section>
+
 
 <!--------------------- Footer  ----------------->
 <footer class="section section-primary" id="footer">

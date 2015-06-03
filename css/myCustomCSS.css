@@ -27,7 +27,7 @@
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 600px;
     padding: 100px 0;
     text-align:justify;
     color: #fff;
@@ -71,6 +71,7 @@
     opacity: .5;
 }
 
+/* Giving a fainted background */
 .panel{
     opacity: .9;
 }
@@ -132,4 +133,10 @@ footer{
     padding-right: 5%;
     padding-bottom:5%;
     padding-top: 3%;
+}
+
+/* Provide one complete page look on medium size scrrens*/
+.content-section {
+    padding-top: 250px;
+    background-color:oldlace;
 }

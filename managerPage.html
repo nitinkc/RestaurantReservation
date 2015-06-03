@@ -34,7 +34,9 @@
 
 </head>
 
-<!-- navbar-fixed-top is not needed as page is not long, alse, if not navbar-fixed-top-->
+<body>
+
+<!-- navbar-fixed-top is not needed as page is not long, else, if not navbar-fixed-top-->
 <nav class="navbar navbar-default top-nav-collapse" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -47,33 +49,121 @@
     </div>
 </nav>
 
-<div class="jumbotron">
-
-    <h3>
-        Recover Password!
-    </h3>
-
-    <p>
-
-    <form role="form">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="reserveEmail">Email</label>
-                    <input type="email" class="form-control" id="reserveEmail" placeholder="example@domain.com">
-                </div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="page-header">
+                <h2>
+                    Confidential: Manager Page
+                    <small>Manually assign table numbers to customers</small>
+                </h2>
             </div>
-
         </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="text-center">
-                    <button type="submit" class="btn large-btn btn-primary">Reserve</button>
-                </div>
-            </div>
+    </div>
+</div>
 
+<!--------------- Table to be populated dynamically (with the data filled by Customer: COLUMNS ARE NOT FINAL)---------------->
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <p> To be Dynamically loaded from the database and on Click (open the editable page from DB (Ajax to be
+                used))</p>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        Confirmation #
+                    </th>
+                    <th>
+                        Seats booked
+                    </th>
+                    <th>
+                        Date and Time booked
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        1000001
+                    </td>
+                    <td>
+                        A1-A5
+                    </td>
+                    <td>
+                        01/04/2012 2:00 PM
+                    </td>
+                    <td>
+                        Default
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>
+                        1000002
+                    </td>
+                    <td>
+                        B1-B2
+                    </td>
+                    <td>
+                        01/04/2012 7:00 PM
+                    </td>
+                    <td>
+                        Approved
+                    </td>
+                </tr>
+                <tr class="success">
+                    <td>
+                        10000003
+                    </td>
+                    <td>
+                        B1-B3
+                    </td>
+                    <td>
+                        02/04/2012 8:00 PM
+                    </td>
+                    <td>
+                        Declined
+                    </td>
+                </tr>
+                <tr class="warning">
+                    <td>
+                        10000004
+                    </td>
+                    <td>
+                        A1-B2
+                    </td>
+                    <td>
+                        03/04/2012 10:00 AM
+                    </td>
+                    <td>
+                        Pending
+                    </td>
+                </tr>
+                <tr class="danger">
+                    <td>
+                        1000005
+                    </td>
+                    <td>
+                        C1-C10
+                    </td>
+                    <td>
+                        04/04/2012 12:00
+                    </td>
+                    <td>
+                        Call in to confirm
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-    </form>
+    </div>
+</div>
+
+<div class="text-center">
+    <a type="button" class="btn large-btn btn-primary" href="index.html">Back</a>
 </div>
 </body>
 </html>
