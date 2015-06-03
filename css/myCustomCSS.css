@@ -127,3 +127,9 @@ footer{
     text-align: center;
     opacity: .6;
 }
+.jumbotron{
+    padding-left: 30%;
+    padding-right: 5%;
+    padding-bottom:5%;
+    padding-top: 3%;
+}
