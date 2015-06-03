@@ -53,30 +53,59 @@
 </nav>
 
 <!------------- Putting the form into Jumbotron ------------->
-<div class="jumbotron">
+<div class="jumbotron modify-reservation">
 
     <h3>
-        Recover Password!
+        Modify Reservation Details
     </h3>
 
     <p>
 
-    <form role="form">
+    <form role="form" >
         <div class="row">
-            <div class="col-sm-6">
+            <p> Confirmation #: 10000004 (to be extracted from DB and populate the input with previous values)</p>
+
+            <div class="col-sm-12">
                 <div class="form-group">
-                    <label for="reserveEmail">Email</label>
-                    <input type="email" class="form-control" id="reserveEmail" placeholder="example@domain.com">
+                    <label for="modifyDate">Modify Date</label>
+                    <input type="date" class="form-control" id="modifyDate" placeholder="previous date">
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="modifyTime">Modify Time</label>
+                    <input type="time" class="form-control" id="modifyTime" placeholder="previous time">
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label for="modifySize">Party Size</label>
+                    <input type="number" class="form-control" id="modifySize" placeholder="#Previous Guests">
                 </div>
             </div>
 
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-3">
                 <div class="text-center">
-                    <button type="submit" class="btn large-btn btn-primary">Recover</button>
+                    <button type="submit" class="btn large-btn btn-primary">Modify</button>
                 </div>
             </div>
+
+            <div class="col-sm-3">
+                <div class="text-center">
+                    <button type="button" class="btn large-btn btn-primary">Cancel</button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="text-center">
+                    <a type="button" class="btn large-btn btn-primary" href="index.html">Back</a>
+                </div>
+            </div>
+
 
         </div>
     </form>

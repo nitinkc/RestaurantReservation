@@ -128,9 +128,19 @@ footer{
     text-align: center;
     opacity: .6;
 }
+
+/* Jumbotron from Recover Password */
 .jumbotron{
     padding-left: 30%;
     padding-right: 5%;
+    padding-bottom:5%;
+    padding-top: 3%;
+}
+
+/* Jumbotron from modify/cancel Form Password */
+.modify-reservation{
+    padding-left: 10%;
+    padding-right: 25%;
     padding-bottom:5%;
     padding-top: 3%;
 }
