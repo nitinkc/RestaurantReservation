@@ -1,4 +1,4 @@
-/*Navigation Bar custom colors  */
+/* Navigation Bar custom colors  */
 .navbar-default {
     background-color: #27cda5;
     border-color: rgba(0,0,0,0);
@@ -13,7 +13,17 @@
     color: #FFF;
 }
 
-/* Intro Header */
+/* Scrollspy custom CSS Setting */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #fed136;
+    color: #fff;
+    display: block;
+    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Intro (Class and child class customization) Header */
 .intro {
     display: table;
     width: 100%;
@@ -54,19 +64,25 @@
     background-image: url("../img/pic.jpg");
 }
 
+/* testing for the video page */
+.section .container .jh{
+    padding-left: 20%;
+    padding-right: 20%;
+    opacity: .5;
+}
+
 .panel{
     opacity: .9;
 }
 
 
-/*.video-container {
-    position: absolute;
+.video-container {
+    position:static;
     top: 0%;
     left: 0%;
-    height: 100%;
-    width: 100%;
+
     overflow: hidden;
-}*/
+}
 
 video{
     position: absolute;
@@ -96,5 +112,18 @@ footer{
     width: 1.28571429em;
     text-align: center;
     /*background-color: rgb(203, 186, 255);*/
-    color: rgb(255, 52, 63);
+    color: #fff;
+}
+
+/* CSS for the Modal for Manager Form (putting the form in Center)*/
+.modalForm .form-group{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.modal-footer{
+    background: whitesmoke;
+    background-color: #27cda5;
+    text-align: center;
+    opacity: .6;
 }
