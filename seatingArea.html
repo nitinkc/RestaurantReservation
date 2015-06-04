@@ -49,9 +49,7 @@
             <a class="navbar-brand" href="index.html">
                 My Restaurant <span> <img class="myLogo" src="img/logo.png" width="40" alt=""></span>
             </a>
-</div>
-            <a href="managerDashboard.html" class="btn-warning">
-                <span class="fa fa-step-backward fa-2x "></span><strong> Go Back</strong></a>
+        </div>
         <!-- navbar header ends -->
     </div>
 </nav>
@@ -61,15 +59,23 @@
         <div class="col-md-12 column">
             <div class="page-header">
                 <h2>
-                    Confidential: Manager Page
-                    <small>Manually assign table numbers to customers</small>
+                    Table Layout
+                    <small> View below the layout for Reservation Status</small>
                 </h2>
             </div>
         </div>
     </div>
 </div>
 
-<!--------------- Table to be populated dynamically (with the data filled by Customer: COLUMNS ARE NOT FINAL)---------------->
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <img alt="140x140" src="img/tables.png" />
+        </div>
+    </div>
+</div>
+
+<!-- Table arrangement for the Restaurant -->
 <div class="container">
     <div class="row clearfix">
         <div class="col-md-12 column">
@@ -88,21 +94,26 @@
                         Date and Time booked
                     </th>
                     <th>
+                        # Guests
+                    </th>
+                    <th>
                         Status
                     </th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
+                <td>
                     <td>
                         <a href="reservationDetails.html"> 1000001</a>
                     </td>
                     <td>
-                        A1-A5
+                        A1,A2
                     </td>
                     <td>
                         01/04/2012 2:00 PM
                     </td>
+                    </td>
+                        2
                     <td>
                         Default
                     </td>
@@ -112,10 +123,13 @@
                         1000002
                     </td>
                     <td>
-                        B1-B2
+                        B1,B2
                     </td>
                     <td>
                         01/04/2012 7:00 PM
+                    </td>
+                    <td>
+                        2
                     </td>
                     <td>
                         Approved
@@ -169,8 +183,5 @@
     </div>
 </div>
 
-<div class="text-center">
-    <a type="button" class="btn large-btn btn-primary" href="managerDashboard.html">Back</a>
-</div>
 </body>
 </html>

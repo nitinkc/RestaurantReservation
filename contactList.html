@@ -39,6 +39,8 @@
 
 </head>
 
+<body>
+
 <!-- navbar-fixed-top is not needed as page is not long, else, if not navbar-fixed-top-->
 <nav class="navbar navbar-default top-nav-collapse" role="navigation">
     <div class="container-fluid">
@@ -52,63 +54,65 @@
     </div>
 </nav>
 
-<!------------- Putting the form into Jumbotron ------------->
-<div class="jumbotron modify-reservation">
-
-    <h3>
-        Modify Reservation Details
-    </h3>
-
-    <p>
-
-    <form role="form" >
-        <div class="row">
-            <p> Confirmation #: 10000004 (to be extracted from DB and populate the input with previous values)</p>
-
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <label for="modifyDate">Modify Date</label>
-                    <input type="date" class="form-control" id="modifyDate" placeholder="previous date">
-                </div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="page-header">
+                <h2>
+                    Confidential: Manager Page
+                    <small>Manually assign table numbers to customers</small>
+                </h2>
             </div>
-
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <label for="modifyTime">Modify Time</label>
-                    <input type="time" class="form-control" id="modifyTime" placeholder="previous time">
-                </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="form-group">
-                    <label for="modifySize">Party Size</label>
-                    <input type="number" class="form-control" id="modifySize" placeholder="#Previous Guests">
-                </div>
-            </div>
-
         </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="text-center">
-                    <button type="submit" class="btn large-btn btn-primary">Modify</button>
-                </div>
-            </div>
+    </div>
+</div>
 
-            <div class="col-sm-3">
-                <div class="text-center">
-                    <button type="button" class="btn large-btn btn-primary">Cancel</button>
-                </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="text-center">
-                    <a type="button" class="btn large-btn btn-primary" href="index.html">Back</a>
-                </div>
-            </div>
-
-
+<!--------------- Table to be populated dynamically (with the data filled by Customer: COLUMNS ARE NOT FINAL)---------------->
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <p> To be Dynamically loaded from the database and on Click (open the editable page from DB (Ajax to be
+                used))</p>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        Confirmation #
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        email
+                    </th>
+                    <th>
+                        phone
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="reservationDetails.html"> 1000001</a>
+                    </td>
+                    <td>
+                        Nitin
+                    </td>
+                    <td>
+                        gs.nitin@gmail.com
+                    </td>
+                    <td>
+                        409-225-6671
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-    </form>
+    </div>
+</div>
+
+<div class="text-center">
+    <a type="button" class="btn large-btn btn-primary" href="managerDashboard.html">Back</a>
 </div>
 </body>
 </html>

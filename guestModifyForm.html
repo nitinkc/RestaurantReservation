@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head lang="en">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,35 +53,63 @@
 </nav>
 
 <!------------- Putting the form into Jumbotron ------------->
-<div class="container">
-    <div class="jumbotron jumbotron-recover-pass">
+<div class="jumbotron modify-reservation">
 
-        <h3>
-            Recover Password!
-        </h3>
+    <h3>
+        Modify Reservation Details
+        <small> Guest Modification Form</small>
+    </h3>
 
-        <p>
+    <p>
 
-        <form role="form">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="reserveEmail">Email</label>
-                        <input type="email" class="form-control" id="reserveEmail" placeholder="example@domain.com">
-                    </div>
+    <form role="form" >
+        <div class="row">
+            <p> Confirmation #: 10000004 (to be extracted from DB and populate the input with previous values)</p>
+
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="modifyDate">Modify Date</label>
+                    <input type="date" class="form-control" id="modifyDate" placeholder="previous date">
                 </div>
-
             </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="text-center">
-                        <button type="submit" class="btn large-btn btn-primary">Recover</button>
-                    </div>
+
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="modifyTime">Modify Time</label>
+                    <input type="time" class="form-control" id="modifyTime" placeholder="previous time">
                 </div>
-
             </div>
-        </form>
-    </div>
+
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label for="modifySize">Party Size</label>
+                    <input type="number" class="form-control" id="modifySize" placeholder="#Previous Guests">
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="text-center">
+                    <button type="submit" class="btn large-btn btn-primary">Modify</button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="text-center">
+                    <button type="button" class="btn large-btn btn-primary">Cancel Reservation</button>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="text-center">
+                    <a type="button" class="btn large-btn btn-primary" href="index.html">Back</a>
+                </div>
+            </div>
+
+
+        </div>
+    </form>
 </div>
 </body>
 </html>
